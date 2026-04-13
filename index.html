@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘楚玲 - 个人简历</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="#" class="navbar-logo">刘楚玲</a>
+                <div class="navbar-menu">
+                    <a href="#hero" class="navbar-link">首页</a>
+                    <a href="#projects" class="navbar-link">项目展示</a>
+                    <a href="#skills" class="navbar-link">技能展示</a>
+                    <a href="#experience" class="navbar-link">工作经历</a>
+                    <a href="#about" class="navbar-link">关于我</a>
+                    <a href="#contact" class="navbar-link">联系方式</a>
+                </div>
+                <div class="navbar-actions">
+                    <button id="theme-toggle" class="theme-toggle">🌙</button>
+                    <button id="menu-toggle" class="menu-toggle">☰</button>
+                </div>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-header">
+                <a href="#" class="mobile-menu-logo">刘楚玲</a>
+                <div class="mobile-menu-actions">
+                    <button id="mobile-theme-toggle" class="mobile-theme-toggle">🌙</button>
+                    <button id="mobile-menu-close" class="mobile-menu-close">×</button>
+                </div>
+            </div>
+            <div class="mobile-menu-content">
+                <a href="#hero" class="mobile-menu-link">首页</a>
+                <a href="#projects" class="mobile-menu-link">项目展示</a>
+                <a href="#skills" class="mobile-menu-link">技能展示</a>
+                <a href="#experience" class="mobile-menu-link">工作经历</a>
+                <a href="#about" class="mobile-menu-link">关于我</a>
+                <a href="#contact" class="mobile-menu-link">联系方式</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero区 -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">刘楚玲</h1>
+                <p class="hero-subtitle">软件工程专业 | 产品运营 | 技术背景</p>
+                <p class="hero-description">性格温和、热爱学习、思维活跃，具备团队合作精神与责任心</p>
+                <div class="hero-scroll">
+                    <span>向下滚动</span>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据成果区 -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">核心成果</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">📊</div>
+                    <div class="achievement-value" data-target="1800">0</div>
+                    <div class="achievement-label">万销售额</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">📱</div>
+                    <div class="achievement-value" data-target="6000">0</div>
+                    <div class="achievement-label">台销量</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <div class="achievement-value">省赛银奖</div>
+                    <div class="achievement-label">互联网+大赛</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目展示区 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">项目展示</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project-id="1">
+                    <div class="project-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=smart%20home%20elderly%20care%20robot%20system%20interface%20design&image_size=square" alt="互联网+大学生创新创业大赛">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tag">获奖项目</div>
+                        <h3 class="project-title">互联网+大学生创新创业大赛</h3>
+                        <p class="project-description">针对独居老年人照护，打造基于摄像机器人的远程实时监控、语音对话、应急帮助一体化远程辅助系统</p>
+                        <div class="project-period">2022.02 - 2022.09</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能展示区 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">技能展示</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3 class="skill-category">编程开发</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">C</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Web开发</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-category">产品工具</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Axure</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">XMind</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Visio</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UML建模</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-category">办公工具</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Excel</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PPT</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Word</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-category">设计剪辑</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">PS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PR</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">剪映</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-category">语言能力</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">英语</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">日语</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 经验背景区 -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">经验背景</h2>
+            <div class="timeline">
+                <!-- 教育经历 -->
+                <div class="timeline-item education">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020.10 - 2024.06</div>
+                        <h3 class="timeline-title">沈阳师范大学</h3>
+                        <p class="timeline-subtitle">软件工程 | 本科</p>
+                        <p class="timeline-description">主修核心课程：C/Java/Python 程序设计、Web 开发及应用、SQL 数据库原理、数据结构、软件工程、软件需求工程与 UML 建模、计算机网络技术、操作系统原理</p>
+                    </div>
+                </div>
+                <!-- 工作经历 1 -->
+                <div class="timeline-item work">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.08 - 2025.12</div>
+                        <h3 class="timeline-title">深圳市酷动数码有限公司（苹果）</h3>
+                        <p class="timeline-subtitle">门店咨询师</p>
+                        <p class="timeline-description">解答苹果全系列产品疑问，挖掘需求引导消费，完成销售目标；统计销售数据、商品陈列养护，运营小红书/朋友圈引流获客；管理配货流程，核对订单信息，对接物流与售后</p>
+                    </div>
+                </div>
+                <!-- 工作经历 2 -->
+                <div class="timeline-item work">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.05 - 2025.07</div>
+                        <h3 class="timeline-title">亿加通信科技有限公司（OPPO）</h3>
+                        <p class="timeline-subtitle">运营管培生</p>
+                        <p class="timeline-description">负责抖音 OPPO 直播间日常管理、商品优化、售前售后处理；执行 618 大促方案，当月销量超 6000 台，销售额超 1800 万；统计电商核心数据，用 Excel 生成报告并提出优化方案</p>
+                    </div>
+                </div>
+                <!-- 工作经历 3 -->
+                <div class="timeline-item work">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024.08 - 2025.03</div>
+                        <h3 class="timeline-title">沈阳必然云科技有限公司</h3>
+                        <p class="timeline-subtitle">运维实习</p>
+                        <p class="timeline-description">排查服务器、网络、数据库故障，保障系统稳定运行；调整系统配置、优化参数，提升性能与安全性；完成数据备份、设备监控，编写运维手册、故障处理指南</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我和联系方式 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-info">
+                    <h3 class="about-subtitle">基础信息</h3>
+                    <ul class="info-list">
+                        <li><strong>姓名：</strong>刘楚玲</li>
+                        <li><strong>性别：</strong>女</li>
+                        <li><strong>年龄：</strong>25 岁</li>
+                        <li><strong>最高学历：</strong>本科</li>
+                        <li><strong>意向城市：</strong>深圳</li>
+                        <li><strong>期望薪资：</strong>7k-10k</li>
+                    </ul>
+                    <h3 class="about-subtitle">兴趣爱好</h3>
+                    <div class="hobbies">
+                        <span class="hobby-tag">音乐</span>
+                        <span class="hobby-tag">绘画</span>
+                        <span class="hobby-tag">羽毛球</span>
+                        <span class="hobby-tag">乒乓球</span>
+                    </div>
+                </div>
+                <div class="about-description">
+                    <h3 class="about-subtitle">自我评价</h3>
+                    <p class="description-text">性格温和、热爱学习、思维活跃，工作认真细致，抗压能力强，具备团队合作精神与责任心。大学期间参与记者团、学生会，负责公众号文案、活动策划，积极参与校内运动赛事。熟练掌握 Office、图片视频处理、游戏设计等工具软件。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3 class="contact-title">电话</h3>
+                    <p class="contact-value" data-copy="19899299759">19899299759</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3 class="contact-title">邮箱</h3>
+                    <p class="contact-value" data-copy="2533321244@qq.com">2533321244@qq.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-copyright">© 2026 刘楚玲. 保留所有权利.</p>
+                <button id="back-to-top" class="back-to-top">↑</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 项目详情模态框 -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <div class="modal-body">
+                <h2 class="modal-title">互联网+大学生创新创业大赛</h2>
+                <div class="modal-image">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=smart%20home%20elderly%20care%20robot%20system%20interface%20design&image_size=landscape_16_9" alt="互联网+大学生创新创业大赛">
+                </div>
+                <div class="modal-info">
+                    <p class="modal-period">2022.02 - 2022.09</p>
+                    <h3 class="modal-subtitle">项目背景</h3>
+                    <p class="modal-description">针对独居老年人照护，打造基于摄像机器人的远程实时监控、语音对话、应急帮助一体化远程辅助系统，解决子女无法陪伴、老年人应急求助难等问题</p>
+                    <h3 class="modal-subtitle">核心工作</h3>
+                    <ul class="modal-list">
+                        <li>用户调研与需求分析：完成市场与用户调研，发放问卷 500+ 份、访谈独居老人 30+ 位，精准定位产品核心需求</li>
+                        <li>产品功能建模：使用 UML 建模工具完成产品功能建模，梳理落地逻辑，支撑产品设计与交互</li>
+                        <li>项目管理与落地：负责论文撰写、答辩方案设计，助力项目获辽宁省校赛银奖及校级创业基金支持</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast 提示 -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
